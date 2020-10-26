@@ -1,0 +1,45 @@
+<header>
+  <nav class="header">
+    <div class="py-4"></div>
+  </nav>
+</header>
+<div class="container container-fluid body-content">
+  <div class="row">
+    <div class="col">
+      <fieldset>
+        <legend>Period: Year 2015</legend>
+
+        <div class="dropdown-container">
+          <label for="state">State: </label>
+          <select
+          style="margin-left: 10px; width: 20%;"
+            name="state"
+            [(ngModel)]="selectedState"
+            (change)="onStateChange()"
+          >
+            <option [ngValue]="undefined" disabled selected>State</option>
+            <option *ngFor="let state of stateList">
+              {{ state }}
+            </option>
+          </select>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+  <div class="row">
+    <app-state-statistics
+      class="col"
+      [data]="selectedStateData"
+      *ngIf="selectedStateData"
+    ></app-state-statistics>
+
+    <app-bar-chart
+      class="col"
+      [data]="selectedStateData"
+      *ngIf="selectedStateData"
+    ></app-bar-chart>
+  </div>
+  <div class="footer">
+    <p></p>
+  </div>
+</div>

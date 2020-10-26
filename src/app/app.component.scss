@@ -1,0 +1,43 @@
+fieldset {
+  border: 1px solid #000;
+  border-radius: 6px;
+  height: 130px;
+}
+.container {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+  margin-top: 10px;
+}
+
+legend {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  margin-left: 15px;
+  font-size: 1rem;
+  line-height: inherit;
+  color: inherit;
+  white-space: normal;
+}
+
+.dropdown-container {
+  margin: 30px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  height: 5%;
+}
+
+.header {
+  width: 100%;
+  background-color: grey;
+}

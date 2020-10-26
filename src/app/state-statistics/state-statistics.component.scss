@@ -1,0 +1,21 @@
+fieldset {
+  border: 1px solid #000;
+  border-radius: 6px;
+}
+.container {
+  margin-top: 15px;
+  padding: 18% 0% 0% 0%;
+}
+
+legend {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  margin-left: 15px;
+  font-size: 1rem;
+  line-height: inherit;
+  color: inherit;
+  white-space: normal;
+}

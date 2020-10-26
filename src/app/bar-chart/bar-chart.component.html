@@ -1,0 +1,16 @@
+<div class="container">
+  <ngx-charts-bar-vertical-2d
+    [view]="[700, 400]"
+    [results]="chartData"
+    [gradient]="true"
+    [xAxis]="true"
+    [yAxis]="true"
+    [legend]="true"
+    [showXAxisLabel]="true"
+    [showYAxisLabel]="true"
+    [xAxisLabel]="data[0].region + ' State'"
+    yAxisLabel="Percentile"
+    legendTitle="Years"
+  >
+  </ngx-charts-bar-vertical-2d>
+</div>

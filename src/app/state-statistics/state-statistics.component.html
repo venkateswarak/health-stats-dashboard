@@ -1,0 +1,23 @@
+<div class="container">
+  <fieldset>
+    <legend>{{ selectedStateProperties.region }} Statistics</legend>
+    <div style="margin: 10px">
+      <p>
+        At least one measure:
+        {{ selectedStateProperties.atleast_one_measure || 0 }}
+      </p>
+      <p>
+        Immunization Measure: {{ selectedStateProperties.immunization_measure }}
+      </p>
+      <p>Registry Measure: {{ selectedStateProperties.registry_measure }}</p>
+      <p>
+        Reportable Results:
+        {{ selectedStateProperties.reportable_lab_results_measure }}
+      </p>
+      <p>
+        Syndromic Measure:
+        {{ selectedStateProperties.syndromic_surveillance_measure }}
+      </p>
+    </div>
+  </fieldset>
+</div>
